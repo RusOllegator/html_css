@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.container {
+    width: 1920px;
+    background-image: url("../content/img/bg_image.png");
+}
+
+
+.slider {
+    height: 725px;
+
+}
+
+.container .header {
+    padding-top: 13px;
+}
+
+
+.container .head_line {
+    width: 100%;
+    height: 83px;
+    background-color: #000000;
+    opacity: 0.5;
+
+
+}
+
+.container .head_line .logo {
+    margin: 19px 0 0 475px;
+    float: left;
+}
+
+.head_contacts {}
+
+.container .head_line .head_contacts {
+    display: inline-block;
+    margin-top: 28px;
+    margin-left: 158px;
+    float: left;
+}
+
+.container .head_line .head_contacts li {
+    display: inline;
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    /* Text style for "+123 456 7" */
+    letter-spacing: 0.36px;
+    margin-right: 39px;
+}
+
+.container .head_line .head_contacts span {
+    margin-left: 14px;
+    vertical-align: super;
+}
+
+.search {
+    margin-left: 100px;
+    padding-top: 23px;
+}
+
+.search_form {}
+
+.search_form .i_search_form {
+    width: 157px;
+    height: 38px;
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    letter-spacing: 0.36px;
+    padding-left: 16px;
+    outline: 1px solid #fff;
+    background-color: inherit;
+    color: #fff;
+    vertical-align: bottom;
+    border: none;
+}
+
+.search_form .i_search_buttom {
+    height: 38px;
+    width: 50px;
+    outline: 1px solid #fff;
+    background-image: url(../content/img/seach_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: inherit;
+    box-sizing: border-box;
+    border: none;
+    margin-left: -3px;
+    vertical-align: bottom;
+}
+
+.header_seach_t {
+
+    margin-right: 474px;
+    margin-top: 28px;
+    height: 38px;
+    width: 208px;
+
+}
+
+.header_seach_t td {
+    border: 1px solid #ffffff;
+
+}
+
+.header_seach_t .seach_icon {
+    vertical-align: middle;
+    text-align: right;
+
+}
+
+.header_seach_t .seach_icon img {
+    margin-right: 15px;
+}
+
+
+.header_seach_t .seach {
+    width: 158px;
+    height: 38px;
+
+}
+
+.header_seach_t span {
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    letter-spacing: 0.36px;
+    margin-left: 16px;
+
+}
+
+
+.container .head_menu {
+
+    height: 46px;
+    width: 1920px;
+    opacity: 0.5;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 32px;
+
+}
+
+.container .head_menu .menu {
+    /* Style for "Home" */
+    margin-left: 702px;
+}
+
+.container .head_menu .menu li {
+    height: 100%;
+}
+
+.container .menu-list {
+    display: inline;
+    margin-right: 33px;
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    font-weight: 400;
+    /* line-height: 22.36px; */
+
+    letter-spacing: 0.36px;
+
+}
+
+.menu .menu-list-current .menu-link {
+    color: #fff;
+    box-shadow: 1px 36px 0px -8px #fff;
+}
+
+
+.menu-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu .menu-list-current .menu-link:hover {
+    color: blue;
+    box-shadow: 1px 36px 0px -8px blue;
+}
+
+.menu-link:hover {
+    color: #f00;
+    box-shadow: 1px 36px 0px -8px #f00;
+}
+
+.menu .menu-list-current .menu-link:active {
+    color: #29c314;
+    box-shadow: 1px 36px 0px -8px #29c314;
+}
+
+.menu-link:active {
+    color: #29c314;
+    box-shadow: 1px 36px 0px -8px #29c314;
+}
+
+.head_menu_bottom {
+    margin-left: 702px;
+    border: 3px solid black;
+}
+
+.head_menu_bottom .menu_botton {
+    display: inline-block;
+}
+
+
+.head_menu_bottom .menu_botton li {
+    display: inline;
+}
+
+
+.slider_small_text {
+    margin-top: 134px;
+    text-align: center;
+
+
+}
+
+.slider_small_text span {
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    box-shadow: 0px 16px 0px -9px #fff;
+
+}
+
+
+.slider_main_text {
+    text-align: center;
+    margin-top: 92px;
+}
+
+.slider_main_text span {
+    /* Style for "Morbi in n" */
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 500;
+    /* Text style for "M, orbi in" */
+    letter-spacing: 0.6px;
+}
+
+
+.container .social_links {
+    margin-top: 75px;
+    margin-left: 860px;
+}
+
+
+.container .social_list {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 12px;
+}
+
+
+
+.container .social_list td {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    /* Радиус скругления */
+    border: 2px solid #fff;
+    margin-right: 12px;
+}
+
+
+
+.social_list td:hover {
+    background-color: black;
+}
+
+
+.social_list td:active {
+    background-color: #db6610;
+}

@@ -408,7 +408,7 @@
     width: 990px;
     margin-left: auto;
     margin-right: auto;
-    border-spacing: 43px 45px;
+   
     
 }
 .services tbody {
@@ -418,12 +418,12 @@
 }
 .services td {
     height: 102px;
-    /* border: 1px solid black; */
+     border: 1px solid black; 
 }
 
 .services .service_text {
     /* Style for "Itaque ear" */
-    
+    width: 282px;
     height: 51px;
     color: #999999;
     font-family: "Roboto Condensed";
@@ -459,11 +459,38 @@
 
 .services .service_image {
     width: 102x;
-    height: 102px;
+    
     border-radius: 60px;
     border: 1px solid #acacac;
     background-color: #e1e1e1;
 }
+
+
+.service_t_image {
+    width: 294px;
+    border-spacing: 28px 39px;
+    margin-left: 65px;
+    margin-right: 65px;
+    
+}
+
+.service_t_image tr td {
+  width: 102px;
+  align-content: center;
+}
+
+
+.service_t_image tbody {
+}
+.service_t_image tr {
+}
+.service_t_image .service_image {
+}
+.service_t_image .service_link {
+}
+.service_t_image img {
+}
+
 
 
 .gallery {

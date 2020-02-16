@@ -44,10 +44,15 @@
     padding-top: 23px;
 }
     
+.about .about_text{
+    margin-left: 20%;
+    
+}
+    
 }
 
 
-@media screen and (max-width : 1600px ) {
+@media screen and (max-width : 1400px ) {
 
 .container .head_line .logo {
     margin: 19px 0 0 11%;
@@ -68,6 +73,10 @@
     padding-top: 23px;
 }
     
+.about .about_text{
+    margin-left: 15%;
+    
+}
     
 }
 
@@ -331,10 +340,132 @@
 
 .about {
     background-color: #fff;
+    height: 500px;
+    padding-top: 81px;
 }
+.about .about_text h1{
+/* Style for "About Us!" */
+    width: 169px;
+    height: 28px;
+    color: #f44336;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
+
+.about .about_text p{
+/* Style for "About Us!" */
+    margin-bottom: 40px;
+}
+
+.about .about_text{
+    width: 398px;
+    height: 203px;
+    color: #999999;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    /* Text style for "Nemo enim" */
+    letter-spacing: 0.12px;
+    display: block;
+    width: 398px;
+    float: left;
+   
+    
+}
+
+.about_image {
+    margin-left: 33px;
+}
+
+
 .services {
     background-color: #f7f7f7;
+    padding-top: 92px;
+    width: 100%;
+    text-align: center;
+    height: 641px;
 }
+
+
+.services .service_h {
+    /* Style for "Services" */
+    width: 149px;
+    height: 29px;
+    color: #f44336;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+   
+}
+
+
+.services .service_table {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 43px 45px;
+    
+}
+.services tbody {
+}
+.services tr {
+    height: 68px;
+}
+.services td {
+    height: 102px;
+    /* border: 1px solid black; */
+}
+
+.services .service_text {
+    /* Style for "Itaque ear" */
+    
+    height: 51px;
+    color: #999999;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    /* Text style for "Itaque ear" */
+    letter-spacing: 0.12px;
+    
+}
+
+.services .left {
+    text-align: right;
+    margin-right: 66px;
+}
+
+.services .right {
+    text-align: left;
+    margin-left: 66px;
+}
+
+.services .service_text h3 {
+    /* Style for "Aut Perfer" */
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    /* Text style for "Aut Perfer" */
+    letter-spacing: 0.16px;
+    margin-bottom: 20px;
+}
+
+.services .service_image {
+    width: 102x;
+    height: 102px;
+    border-radius: 60px;
+    border: 1px solid #acacac;
+    background-color: #e1e1e1;
+}
+
+
 .gallery {
     background-color: #fff;
 }

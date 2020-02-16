@@ -15,13 +15,22 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
+
 .container {
     max-width: 1920px;
     min-width: 1175px;
     margin: 0 auto;
-    background-image: url("../content/img/bg_image.png");
+    
 }
 
+.container .slider {
+
+background-image: url("../content/img/bg_image.png");
+}
 
 @media screen and (min-width : 1600px ) {
 
@@ -79,8 +88,6 @@
 }
     
 }
-
-
 
 .slider {
     height: 725px;
@@ -335,8 +342,13 @@
     background-color: #db6610;
 }
 
-
-
+.section_head{
+    color: #f44336;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+}
 
 .about {
     background-color: #fff;
@@ -347,11 +359,6 @@
 /* Style for "About Us!" */
     width: 169px;
     height: 28px;
-    color: #f44336;
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 36px;
     margin-bottom: 35px;
 }
 
@@ -381,7 +388,6 @@
     margin-left: 33px;
 }
 
-
 .services {
     background-color: #f7f7f7;
     padding-top: 92px;
@@ -395,36 +401,20 @@
     /* Style for "Services" */
     width: 149px;
     height: 29px;
-    color: #f44336;
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 48px;
-   
+
 }
 
-
-.services .service_table {
-    width: 990px;
-    margin-left: auto;
-    margin-right: auto;
-   
+.services .service_content {
+    margin: 0 auto;
     
-}
-.services tbody {
-}
-.services tr {
-    height: 68px;
-}
-.services td {
-    height: 102px;
-     border: 1px solid black; 
+    height: 450px;
+    width: 1000px;
+    margin-top: 87px; 
 }
 
-.services .service_text {
-    /* Style for "Itaque ear" */
+.services .service_content_text {
+    float: left;
     width: 282px;
-    height: 51px;
     color: #999999;
     font-family: "Roboto Condensed";
     font-size: 12px;
@@ -432,21 +422,28 @@
     line-height: 20px;
     /* Text style for "Itaque ear" */
     letter-spacing: 0.12px;
+        
+}
+
+
+.services .txt_left {
+    margin-right: 66px;
+    text-align: right;
+    clear: left
+}
+
+.services .txt_right {
+    text-align: left;
+}
+
+
+.services .service_content_text h3{
+     margin-bottom: 20px;
     
 }
 
-.services .left {
-    text-align: right;
-    margin-right: 66px;
-}
-
-.services .right {
-    text-align: left;
-    margin-left: 66px;
-}
-
-.services .service_text h3 {
-    /* Style for "Aut Perfer" */
+.services .service_content_text a{
+        /* Style for "Aut Perfer" */
     color: #000000;
     font-family: Poppins;
     font-size: 16px;
@@ -454,53 +451,186 @@
     line-height: 24px;
     /* Text style for "Aut Perfer" */
     letter-spacing: 0.16px;
-    margin-bottom: 20px;
+        
 }
 
-.services .service_image {
-    width: 102x;
+
+
+.services .service_content_image {
+    text-align: initial;
+    float: left;
+    background-image: url(../content/img/red_ellipse.png);
+    background-position: 0px 0;
+    background-repeat: no-repeat;
+}
+
+
+.services .im_left {
+    margin-right: 90px;
     
-    border-radius: 60px;
-    border: 1px solid #acacac;
-    background-color: #e1e1e1;
 }
 
-
-.service_t_image {
-    width: 294px;
-    border-spacing: 28px 39px;
-    margin-left: 65px;
-    margin-right: 65px;
+.services .im_right {
+    margin-right: 68px;
     
 }
 
-.service_t_image tr td {
-  width: 102px;
-  align-content: center;
+
+.services .service_content_image .service_icon{
+    position: relative;
+    top: -70px;
+    left: auto;
+    text-align: center;
+    
 }
 
-
-.service_t_image tbody {
+.services a:hover {
+    color: #f44336;
 }
-.service_t_image tr {
-}
-.service_t_image .service_image {
-}
-.service_t_image .service_link {
-}
-.service_t_image img {
-}
-
 
 
 .gallery {
+    padding-top: 93px;
     background-color: #fff;
+    text-align: center;
+    height: 646px;
 }
+
+.gallery .section_head {
+    
+}
+.gallery .gallery_content {
+    padding-top: 92px;
+    width: 1200px;
+    margin: 0 auto;
+        
+}
+
+
+.gallery .gallery_position {
+    float: left;
+    width: 271px;
+    margin-right: 29px;
+    
+}
+
+.gallery .gallery_position_buy {
+    /* Style for "Прямоуголь" */
+    width: 270px;
+    height: 105px;
+    background-color: #f7f7f7;
+    padding-top: 19px;
+}
+
+.gallery .gallery_position_buy span{
+/* Style for "Assasin’s" */
+color: #000000;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 800;
+line-height: 23.94px;
+text-transform: uppercase;
+/* Text style for "Assasin’s" */
+letter-spacing: 0.14px;
+
+}
+
+.gallery .gallery_position_buy .buy_bottom {
+    /* Style for "Прямоуголь" */
+    width: 130px;
+    height: 30px;
+    background-color: #f44336;
+    margin-top: 27px;
+}
+
 .testimonial {
     background-color: rgba(102, 102, 102, 0.81);
     background-image: url(../content/img/testimonial.png);
+    background-position: left;
+    margin-top: 186px;
+    width: 100%;
+    clear: both;
+    height: 460px;
+    text-align: center;
+    padding-top: 85px;
+}
+
+
+.testimonial .testimonial_text1{
+width: 277px;
+height: 39px;
+color: #ffffff;
+font-family: Poppins;
+font-size: 48px;
+font-weight: 500;
+line-height: 48px; 
+margin-top: 85px;
     
 }
+.testimonial img {
+display: block;
+margin: 0 auto;
+margin-top: 90px;
+}
+.testimonial .testimonial_content {
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px solid red;
+    margin-top: 51px;
+    
+}
+
+.testimonial .testimonial_content .testimonial_content_text{
+/* Style for "Donec feug" */
+color: #ffffff;
+font-family: "Roboto Condensed";
+font-size: 14px;
+font-weight: 300;
+vertical-align: text-top;
+display: block;
+border: 1px solid green;
+width: 935px;
+float: left
+}
+
+.testimonial .testimonial_content .testimonial_content_text h2{
+margin-top: 50px;
+
+}
+
+
+.testimonial .testimonial_content .testimonial_botton_left{
+/* Style for "Прямоуголь" */
+width: 37px;
+height: 37px;
+border: 1px solid #ffffff;
+background-image: url(../content/img/arrow-left.png);
+background-color: rgba(102, 102, 102, 0.81);
+    background-repeat: no-repeat;
+    background-position: center;
+float:left;
+margin-top: 9px;
+margin-right: 79px;
+    
+}
+
+.testimonial .testimonial_content .testimonial_botton_right{
+/* Style for "Прямоуголь" */
+width: 37px;
+height: 37px;
+border: 1px solid #ffffff;
+background-image: url(../content/img/arrow-right.png);
+background-color: rgba(102, 102, 102, 0.81);
+    background-repeat: no-repeat;
+    background-position: center;
+margin-top: 9px;
+margin-left: 79px; 
+}
+
+.testimonial .testimonial_content .botton:active {
+    background-color: rgba(192, 39, 198, 0.33);
+}
+
 .events {
     background-color: #fff;
     

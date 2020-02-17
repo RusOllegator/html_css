@@ -1,7 +1,7 @@
 /*VARIABLES*/
 
 @All_MAX_WIDTH: 1920px;
-@ALL_MIN_WIDTH: 1200px;
+@ALL_MIN_WIDTH: 1300px;
 @ALL_WITH_PERCENT: 100%;
 
 
@@ -23,6 +23,7 @@ body {
     clear: both;
 }
 
+a {text-decoration: none;}
 
 .container {
     max-width: @All_MAX_WIDTH;
@@ -198,13 +199,21 @@ body {
         box-shadow: 0px 16px 0px -9px #fff;
 
     }
+    
+    .slider_small_text:hover span  {
+        color: blue;
+        box-shadow: 0px 16px 0px -8px blue  ;
+    }
 
     .slider_main_text {
         text-align: center;
         margin-top: 92px;
     }
 
-
+    .slider_main_text:hover span{
+        color: blue;
+    }
+    
     .slider_main_text span {
         /* Style for "Morbi in n" */
         color: #ffffff;
@@ -226,7 +235,7 @@ body {
             margin-left: auto;
             margin-right: auto;
         }
-        .container .social_list td {
+        .social_list td {
             width: 40px;
             height: 40px;
             border-radius: 50px;
@@ -256,51 +265,57 @@ body {
     line-height: 48px;
 }
 
+
 .about {
     background-color: #fff;
-    height: 500px;
+    
     padding-top: 81px;
+    margin-left: 23%;
+
+    .about_text h1 {
+        /* Style for "About Us!" */
+        width: 169px;
+        height: 28px;
+        margin-bottom: 35px;
+
+    }
+    .about_text p {
+        /* Style for "About Us!" */
+        margin-bottom: 40px;
+    }
+    .about_text {
+        width: 398px;
+        color: #999999;
+        font-family: "Roboto Condensed";
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 24px;
+        /* Text style for "Nemo enim" */
+        letter-spacing: 0.12px;
+        float: left;
+        margin-right: 33px;
+    }
+    .about_image {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .about_image:hover img {
+        outline: 1px solid rgba(99, 94, 208, 0.54);
+    }
+    
 }
 
-.about .about_text h1 {
-    /* Style for "About Us!" */
-    width: 169px;
-    height: 28px;
-    margin-bottom: 35px;
-}
 
-.about .about_text p {
-    /* Style for "About Us!" */
-    margin-bottom: 40px;
-}
-
-.about .about_text {
-    width: 398px;
-    height: 203px;
-    color: #999999;
-    font-family: "Roboto Condensed";
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 24px;
-    /* Text style for "Nemo enim" */
-    letter-spacing: 0.12px;
-    display: block;
-    width: 398px;
-    float: left;
-
-
-}
-
-.about_image {
-    margin-left: 33px;
-}
 
 .services {
     background-color: #f7f7f7;
     padding-top: 92px;
+    margin-top: 81px;
     width: 100%;
     text-align: center;
     height: 641px;
+    
+    
 }
 
 

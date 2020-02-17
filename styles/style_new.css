@@ -14,9 +14,12 @@ body {
 .clr:after {
   clear: both;
 }
+a {
+  text-decoration: none;
+}
 .container {
   max-width: 1920px;
-  min-width: 1200px;
+  min-width: 1300px;
   margin: 0 auto;
   min-height: 100%;
 }
@@ -152,9 +155,16 @@ body {
   letter-spacing: 0.18px;
   box-shadow: 0px 16px 0px -9px #fff;
 }
+.head_page .slider_small_text:hover span {
+  color: blue;
+  box-shadow: 0px 16px 0px -8px blue;
+}
 .head_page .slider_main_text {
   text-align: center;
   margin-top: 92px;
+}
+.head_page .slider_main_text:hover span {
+  color: blue;
 }
 .head_page .slider_main_text span {
   /* Style for "Morbi in n" */
@@ -176,7 +186,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.head_page .social_links .container .social_list td {
+.head_page .social_links .social_list td {
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -199,8 +209,8 @@ body {
 }
 .about {
   background-color: #fff;
-  height: 500px;
   padding-top: 81px;
+  margin-left: 23%;
 }
 .about .about_text h1 {
   /* Style for "About Us!" */
@@ -213,7 +223,7 @@ body {
   margin-bottom: 40px;
 }
 .about .about_text {
-  height: 203px;
+  width: 398px;
   color: #999999;
   font-family: "Roboto Condensed";
   font-size: 12px;
@@ -221,16 +231,20 @@ body {
   line-height: 24px;
   /* Text style for "Nemo enim" */
   letter-spacing: 0.12px;
-  display: block;
-  width: 398px;
   float: left;
+  margin-right: 33px;
 }
-.about_image {
-  margin-left: 33px;
+.about .about_image {
+  display: inline-block;
+  vertical-align: middle;
+}
+.about .about_image:hover img {
+  outline: 1px solid rgba(99, 94, 208, 0.54);
 }
 .services {
   background-color: #f7f7f7;
   padding-top: 92px;
+  margin-top: 81px;
   width: 100%;
   text-align: center;
   height: 641px;

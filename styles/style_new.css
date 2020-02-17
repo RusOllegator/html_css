@@ -11,74 +11,39 @@ html,
 body {
   height: 100%;
 }
-.clearfix:after {
-  content: "";
-  display: table;
+.clr:after {
   clear: both;
-}
-a {
-  text-decoration: none;
 }
 .container {
   max-width: 1920px;
-  min-width: 1175px;
+  min-width: 1200px;
   margin: 0 auto;
   min-height: 100%;
 }
-.container .slider {
+.head_page {
   background-image: url("../content/img/bg_image.png");
-}
-@media screen and (min-width: 1600px) {
-  .container .head_line .logo {
-    margin: 19px 0 0 475px;
-    float: left;
-  }
-  .container .head_line .head_contacts {
-    display: inline-block;
-    margin-top: 28px;
-    margin-left: 158px;
-    float: left;
-  }
-  .search {
-    margin-left: 100px;
-    padding-top: 23px;
-  }
-  .about .about_text {
-    margin-left: 20%;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .container .head_line .logo {
-    margin: 19px 0 0 11%;
-    float: left;
-  }
-  .container .head_line .head_contacts {
-    display: inline-block;
-    margin-top: 28px;
-    margin-left: 8%;
-    float: left;
-  }
-  .search {
-    margin-left: 5%;
-    padding-top: 23px;
-  }
-  .about .about_text {
-    margin-left: 15%;
-  }
-}
-.slider {
   height: 725px;
 }
-.container .header {
+.header {
   padding-top: 13px;
 }
-.container .head_line {
+.header .head_line {
   width: 100%;
   height: 83px;
   background-color: #000000;
   opacity: 0.5;
 }
-.container .head_line .head_contacts li {
+.header .head_line .logo {
+  margin: 19px 0 0 24.7%;
+  float: left;
+}
+.header .head_line .head_contacts {
+  display: inline-block;
+  margin-top: 28px;
+  margin-left: 8.23%;
+  float: left;
+}
+.header .head_line .head_contacts li {
   display: inline;
   color: #ffffff;
   font-family: "Roboto Condensed";
@@ -89,11 +54,15 @@ a {
   letter-spacing: 0.36px;
   margin-right: 39px;
 }
-.container .head_line .head_contacts span {
+.header .head_line .head_contacts span {
   margin-left: 14px;
   vertical-align: super;
 }
-.search_form .i_search_form {
+.header .head_line .search {
+  margin-left: 5.2%;
+  padding-top: 23px;
+}
+.header .head_line .search .search_form .i_search_form {
   width: 157px;
   height: 38px;
   font-family: "Roboto Condensed";
@@ -106,7 +75,7 @@ a {
   vertical-align: bottom;
   border: none;
 }
-.search_form .i_search_buttom {
+.header .head_line .search .search_form .i_search_button {
   height: 38px;
   width: 50px;
   outline: 1px solid #fff;
@@ -119,57 +88,18 @@ a {
   margin-left: -3px;
   vertical-align: bottom;
 }
-.header_seach_t {
-  margin-right: 474px;
-  margin-top: 28px;
-  height: 38px;
-  width: 208px;
-}
-.header_seach_t td {
-  border: 1px solid #ffffff;
-}
-.header_seach_t .seach_icon {
-  vertical-align: middle;
-  text-align: right;
-}
-.header_seach_t .seach_icon img {
-  margin-right: 15px;
-}
-.header_seach_t .seach {
-  width: 158px;
-  height: 38px;
-}
-.header_seach_t span {
-  color: #ffffff;
-  font-family: "Roboto Condensed";
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 22.36px;
-  letter-spacing: 0.36px;
-  margin-left: 16px;
-}
-.container .head_menu {
+.header .head_menu {
   height: 46px;
   width: 100%;
   opacity: 0.5;
   border-bottom: 1px solid #ffffff;
   padding-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
 }
-.container .head_menu .menu {
+.header .head_menu .menu {
   /* Style for "Home" */
   text-align: center;
 }
-.container .head_menu .menu li {
-  text-align: center;
-  height: 100%;
-}
-.container .head_menu .menu ul {
-  text-align: center;
-  margin: 0 auto;
-}
-.container .menu-list {
+.header .head_menu .menu .menu-list {
   display: inline;
   margin-right: 33px;
   font-family: "Roboto Condensed";
@@ -178,35 +108,43 @@ a {
   /* line-height: 22.36px; */
   letter-spacing: 0.36px;
 }
-.menu .menu-list-current .menu-link {
+.header .head_menu .menu .menu-list-current .menu-link {
   color: #fff;
   box-shadow: 1px 36px 0px -8px #fff;
 }
-.menu-link {
-  color: #000;
-  text-decoration: none;
-}
-.menu .menu-list-current .menu-link:hover {
+.header .head_menu .menu .menu-list-current .menu-link:hover {
   color: blue;
   box-shadow: 1px 36px 0px -8px blue;
 }
-.menu-link:hover {
+.header .head_menu .menu .menu-list-current .menu-link:active {
+  color: #29c314;
+  box-shadow: 1px 36px 0px -8px #29c314;
+}
+.header .head_menu .menu .menu-link {
+  color: #000;
+  text-decoration: none;
+}
+.header .head_menu .menu .menu-link:hover {
   color: #f00;
   box-shadow: 1px 36px 0px -8px #f00;
 }
-.menu .menu-list-current .menu-link:active {
+.header .head_menu .menu .menu-link:active {
   color: #29c314;
   box-shadow: 1px 36px 0px -8px #29c314;
 }
-.menu-link:active {
-  color: #29c314;
-  box-shadow: 1px 36px 0px -8px #29c314;
+.header .head_menu .menu li {
+  text-align: center;
+  height: 100%;
 }
-.slider_small_text {
+.header .head_menu .menu ul {
+  text-align: center;
+  margin: 0 auto;
+}
+.head_page .slider_small_text {
   margin-top: 134px;
   text-align: center;
 }
-.slider_small_text span {
+.head_page .slider_small_text span {
   color: #ffffff;
   font-family: "Roboto Condensed";
   font-size: 18px;
@@ -214,11 +152,11 @@ a {
   letter-spacing: 0.18px;
   box-shadow: 0px 16px 0px -9px #fff;
 }
-.slider_main_text {
+.head_page .slider_main_text {
   text-align: center;
   margin-top: 92px;
 }
-.slider_main_text span {
+.head_page .slider_main_text span {
   /* Style for "Morbi in n" */
   color: #ffffff;
   font-family: Poppins;
@@ -227,10 +165,10 @@ a {
   /* Text style for "M, orbi in" */
   letter-spacing: 0.6px;
 }
-.container .social_links {
+.head_page .social_links {
   margin-top: 75px;
 }
-.container .social_list {
+.head_page .social_links .social_list {
   text-align: center;
   border-collapse: separate;
   border-spacing: 12px;
@@ -238,7 +176,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.container .social_list td {
+.head_page .social_links .container .social_list td {
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -246,10 +184,10 @@ a {
   border: 2px solid #fff;
   margin-right: 12px;
 }
-.social_list td:hover {
+.head_page .social_links .social_list td:hover {
   background-color: black;
 }
-.social_list td:active {
+.head_page .social_links .social_list td:active {
   background-color: #db6610;
 }
 .section_head {

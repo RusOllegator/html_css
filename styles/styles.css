@@ -4,8 +4,13 @@
 }
 
 
-.body {
+body {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 .clearfix:after {
@@ -15,11 +20,80 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .container {
-    width: 1920px;
+    max-width: 1920px;
+    min-width: 1175px;
+    margin: 0 auto;
+    min-height: 100%;
+
+}
+
+.container .slider {
+
     background-image: url("../content/img/bg_image.png");
 }
 
+@media screen and (min-width : 1600px) {
+
+    .container .head_line .logo {
+
+        margin: 19px 0 0 475px;
+        float: left;
+
+    }
+
+    .container .head_line .head_contacts {
+        display: inline-block;
+        margin-top: 28px;
+        margin-left: 158px;
+        float: left;
+    }
+
+    .search {
+        margin-left: 100px;
+        padding-top: 23px;
+    }
+
+    .about .about_text {
+        margin-left: 20%;
+
+    }
+
+}
+
+
+@media screen and (max-width : 1600px) {
+
+    .container .head_line .logo {
+        margin: 19px 0 0 11%;
+        float: left;
+    }
+
+
+    .container .head_line .head_contacts {
+        display: inline-block;
+        margin-top: 28px;
+        margin-left: 8%;
+        float: left;
+    }
+
+
+    .search {
+        margin-left: 5%;
+        padding-top: 23px;
+    }
+
+    .about .about_text {
+        margin-left: 15%;
+
+    }
+
+}
 
 .slider {
     height: 725px;
@@ -40,20 +114,6 @@
 
 }
 
-.container .head_line .logo {
-    margin: 19px 0 0 475px;
-    float: left;
-}
-
-.head_contacts {}
-
-.container .head_line .head_contacts {
-    display: inline-block;
-    margin-top: 28px;
-    margin-left: 158px;
-    float: left;
-}
-
 .container .head_line .head_contacts li {
     display: inline;
     color: #ffffff;
@@ -71,12 +131,6 @@
     vertical-align: super;
 }
 
-.search {
-    margin-left: 100px;
-    padding-top: 23px;
-}
-
-.search_form {}
 
 .search_form .i_search_form {
     width: 157px;
@@ -152,20 +206,29 @@
 .container .head_menu {
 
     height: 46px;
-    width: 1920px;
+    width: 100%;
     opacity: 0.5;
     border-bottom: 1px solid #ffffff;
     padding-top: 32px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container .head_menu .menu {
     /* Style for "Home" */
-    margin-left: 702px;
+    text-align: center;
+
 }
 
 .container .head_menu .menu li {
+    text-align: center;
     height: 100%;
+}
+
+
+.container .head_menu .menu ul {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .container .menu-list {
@@ -211,19 +274,6 @@
     box-shadow: 1px 36px 0px -8px #29c314;
 }
 
-.head_menu_bottom {
-    margin-left: 702px;
-    border: 3px solid black;
-}
-
-.head_menu_bottom .menu_botton {
-    display: inline-block;
-}
-
-
-.head_menu_bottom .menu_botton li {
-    display: inline;
-}
 
 
 .slider_small_text {
@@ -262,7 +312,7 @@
 
 .container .social_links {
     margin-top: 75px;
-    margin-left: 860px;
+
 }
 
 
@@ -270,6 +320,10 @@
     text-align: center;
     border-collapse: separate;
     border-spacing: 12px;
+    width: 238px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -292,4 +346,361 @@
 
 .social_list td:active {
     background-color: #db6610;
+}
+
+.section_head {
+    color: #f44336;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.about {
+    background-color: #fff;
+    height: 500px;
+    padding-top: 81px;
+}
+
+.about .about_text h1 {
+    /* Style for "About Us!" */
+    width: 169px;
+    height: 28px;
+    margin-bottom: 35px;
+}
+
+.about .about_text p {
+    /* Style for "About Us!" */
+    margin-bottom: 40px;
+}
+
+.about .about_text {
+    width: 398px;
+    height: 203px;
+    color: #999999;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    /* Text style for "Nemo enim" */
+    letter-spacing: 0.12px;
+    display: block;
+    width: 398px;
+    float: left;
+
+
+}
+
+.about_image {
+    margin-left: 33px;
+}
+
+.services {
+    background-color: #f7f7f7;
+    padding-top: 92px;
+    width: 100%;
+    text-align: center;
+    height: 641px;
+}
+
+
+.services .service_h {
+    /* Style for "Services" */
+    width: 149px;
+    height: 29px;
+
+}
+
+.services .service_content {
+    margin: 0 auto;
+
+    height: 450px;
+    width: 1000px;
+    margin-top: 87px;
+}
+
+.services .service_content_text {
+    float: left;
+    width: 282px;
+    color: #999999;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    /* Text style for "Itaque ear" */
+    letter-spacing: 0.12px;
+
+}
+
+
+.services .txt_left {
+    margin-right: 66px;
+    text-align: right;
+    clear: left
+}
+
+.services .txt_right {
+    text-align: left;
+}
+
+
+.services .service_content_text h3 {
+    margin-bottom: 20px;
+
+}
+
+.services .service_content_text a {
+    /* Style for "Aut Perfer" */
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    /* Text style for "Aut Perfer" */
+    letter-spacing: 0.16px;
+
+}
+
+
+
+.services .service_content_image {
+    text-align: initial;
+    float: left;
+    background-image: url(../content/img/red_ellipse.png);
+    background-position: 0px 0;
+    background-repeat: no-repeat;
+}
+
+
+.services .im_left {
+    margin-right: 90px;
+
+}
+
+.services .im_right {
+    margin-right: 68px;
+
+}
+
+
+.services .service_content_image .service_icon {
+    position: relative;
+    top: -70px;
+    left: auto;
+    text-align: center;
+
+}
+
+.services a:hover {
+    color: #f44336;
+}
+
+
+.gallery {
+    padding-top: 93px;
+    background-color: #fff;
+    text-align: center;
+    height: 646px;
+}
+
+.gallery .section_head {}
+
+.gallery .gallery_content {
+    padding-top: 92px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.gallery .gallery_position {
+    float: left;
+    width: 271px;
+    margin-right: 29px;
+
+}
+
+.gallery .gallery_position_buy {
+    /* Style for "Прямоуголь" */
+    width: 270px;
+    height: 105px;
+    background-color: #f7f7f7;
+    padding-top: 19px;
+}
+
+.gallery .gallery_position_buy span {
+    /* Style for "Assasin’s" */
+    color: #000000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 23.94px;
+    text-transform: uppercase;
+    /* Text style for "Assasin’s" */
+    letter-spacing: 0.14px;
+
+}
+
+.gallery .gallery_position_buy .buy_bottom {
+    /* Style for "Прямоуголь" */
+    width: 130px;
+    height: 30px;
+    background-color: #f44336;
+    margin-top: 27px;
+}
+
+.testimonial {
+    background-color: rgba(102, 102, 102, 0.81);
+    background-image: url(../content/img/testimonial.png);
+    background-position: left;
+    margin-top: 186px;
+    width: 100%;
+    clear: both;
+    height: 460px;
+    text-align: center;
+    padding-top: 85px;
+}
+
+
+.testimonial .testimonial_text1 {
+    width: 277px;
+    height: 39px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-top: 85px;
+
+}
+
+.testimonial img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.testimonial .testimonial_content {
+    width: 1200px;
+    margin: 0 auto;
+
+    margin-top: 51px;
+
+}
+
+.testimonial .testimonial_content .testimonial_content_text {
+    /* Style for "Donec feug" */
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: 300;
+    vertical-align: text-top;
+    display: block;
+
+    width: 935px;
+    float: left
+}
+
+.testimonial .testimonial_content .testimonial_content_text h2 {
+    margin-top: 50px;
+
+}
+
+
+.testimonial .testimonial_content .testimonial_botton_left {
+    /* Style for "Прямоуголь" */
+    width: 37px;
+    height: 37px;
+    border: 1px solid #ffffff;
+    background-image: url(../content/img/arrow-left.png);
+    background-color: rgba(102, 102, 102, 0.81);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-top: 9px;
+    margin-right: 79px;
+
+}
+
+.testimonial .testimonial_content .testimonial_botton_right {
+    /* Style for "Прямоуголь" */
+    width: 37px;
+    height: 37px;
+    border: 1px solid #ffffff;
+    background-image: url(../content/img/arrow-right.png);
+    background-color: rgba(102, 102, 102, 0.81);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 9px;
+    margin-left: 79px;
+}
+
+.testimonial .testimonial_content .botton:active {
+    background-color: rgba(192, 39, 198, 0.33);
+}
+
+/*
+
+.events {
+    background-color: #fff;
+    margin-top: 97px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    margin-bottom: 103px;
+    padding: 0 100px;
+    
+}
+
+
+.events .events_content{
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.events .events_content .event_block_head{
+color: #000000;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 500;
+line-height: 48px;    
+    
+}
+
+
+*/
+.team {
+    background-color: #f7f7f7;
+
+}
+
+.susbscribe {
+    background-image: url(../content/img/subscribe_bg_image.png);
+}
+
+.contacts {
+    background-color: #ffffff;
+
+}
+
+.footer {
+    background-color: #000000;
+    width: 100%;
+    height: 71px;
+    margin-top: 0;
+    /* Style for "© 2017 Ист" */
+    color: #ffffff;
+    font-family: "Arial Narrow";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    /* Text style for "©,  2017 И" */
+    letter-spacing: 0.16px;
+    text-align: center;
+
+}
+
+.footer span {
+    margin-top: 29px;
+    display: inline-block;
 }
